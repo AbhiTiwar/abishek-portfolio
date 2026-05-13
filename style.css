@@ -241,10 +241,13 @@ section h2{
 }
 
 /* ICON SIZE (INCREASED) */
+
 .skill-card i{
     font-size:5.5rem;
-    margin-bottom:20px;
-    transition:0.4s ease;
+    padding:18px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(8px);
 }
 
 /* HOVER ANIMATION */
@@ -272,8 +275,9 @@ section h2{
 }
 
 .js{
-    color:#ffeb3b;
-    text-shadow:0 0 20px #ffeb3b;
+    color:#f7df1e;
+    text-shadow:0 0 12px rgba(247,223,30,0.8);
+    filter:drop-shadow(0 0 6px rgba(0,0,0,0.4));
 }
 
 .bootstrap{
@@ -331,6 +335,8 @@ section h2{
     color:#a678ff;
     text-shadow:0 0 20px #a678ff;
 }
+
+
 
 
 
