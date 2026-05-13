@@ -1,11 +1,16 @@
 
-// mobile menu
+// menu
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("show");
 }
 
+// theme toggle
+function toggleTheme() {
+    document.body.classList.toggle("light");
+}
+
 // typing effect
-const text = "Full Stack Web Developer";
+const text = "Full Stack Developer";
 let i = 0;
 
 function type() {
@@ -17,11 +22,10 @@ function type() {
 }
 type();
 
-// scroll animation
+// scroll reveal
 window.addEventListener("scroll", () => {
-    document.querySelectorAll(".fade").forEach(el => {
-        const position = el.getBoundingClientRect().top;
-        if (position < window.innerHeight - 100) {
+    document.querySelectorAll(".reveal").forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
             el.classList.add("show");
         }
     });
