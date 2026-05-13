@@ -1,45 +1,78 @@
-// Typing effect
-const text = ["Full Stack Developer", "CSE Student", "Web Enthusiast"];
-let i = 0;
-let j = 0;
-let current = "";
+// =========================
+// Typing Effect
+// =========================
+
+const words = [
+    "Full Stack Developer",
+    "CSE Student",
+    "Web Enthusiast"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let currentWord = "";
 let isDeleting = false;
 
-function type() {
-    current = text[i];
+function typeEffect() {
+
+    currentWord = words[wordIndex];
 
     if (isDeleting) {
-        j--;
+        charIndex--;
     } else {
-        j++;
+        charIndex++;
     }
 
     document.getElementById("typing").textContent =
-        current.substring(0, j);
+        currentWord.substring(0, charIndex);
 
-    if (!isDeleting && j === current.length) {
+    // Typing complete
+    if (!isDeleting && charIndex === currentWord.length) {
+
         isDeleting = true;
-        setTimeout(type, 1000);
+
+        setTimeout(typeEffect, 1000);
         return;
     }
 
-    if (isDeleting && j === 0) {
+    // Deleting complete
+    if (isDeleting && charIndex === 0) {
+
         isDeleting = false;
-        i = (i + 1) % text.length;
+
+        wordIndex++;
+
+        if (wordIndex === words.length) {
+            wordIndex = 0;
+        }
     }
 
-    setTimeout(type, isDeleting ? 50 : 100);
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
 }
 
-type();
-
-// Theme toggle (simple)
+typeEffect();
 
 
-// Toggle theme
+// =========================
+// Theme Toggle
+// =========================
+
+// Load saved theme
+window.onload = function () {
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+    }
+};
+
+// Toggle theme function
 function toggleTheme() {
+
     document.body.classList.toggle("dark");
 
+    // Save theme
     if (document.body.classList.contains("dark")) {
         localStorage.setItem("theme", "dark");
     } else {
