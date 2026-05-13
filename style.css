@@ -216,66 +216,116 @@ section h2{
 }
 
 
-/* SKILL CARDS */
+
+
+
+/* =========================
+   MODERN SKILL CARDS (UPDATED)
+========================= */
 
 .skill-card{
-    background:var(--glass);
-    padding:30px 20px;
-    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    padding:35px 20px;
+    border-radius:22px;
     text-align:center;
-    transition:0.4s;
+    transition:0.4s ease;
     backdrop-filter:blur(12px);
     border:1px solid rgba(255,255,255,0.1);
+    overflow:hidden;
+    position:relative;
 }
 
 .skill-card:hover{
-    transform:translateY(-10px) scale(1.05);
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    transform:translateY(-12px) scale(1.05);
+    box-shadow:0 15px 35px rgba(0,0,0,0.35);
 }
 
+/* ICON SIZE (INCREASED) */
 .skill-card i{
-    font-size:4rem;
-    margin-bottom:15px;
-    transition:0.3s;
+    font-size:5.5rem;
+    margin-bottom:20px;
+    transition:0.4s ease;
 }
 
-/* ICON COLORS */
+/* HOVER ANIMATION */
+.skill-card:hover i{
+    transform:scale(1.25) rotate(8deg);
+}
+
+/* TEXT */
+.skill-card h3{
+    font-size:1.2rem;
+    font-weight:600;
+    margin-top:10px;
+}
+
+/* ===== COLORFUL ICONS ===== */
 
 .html{
-    color:#e34f26;
+    color:#ff5722;
+    text-shadow:0 0 20px #ff5722;
 }
 
 .css{
-    color:#1572b6;
+    color:#2196f3;
+    text-shadow:0 0 20px #2196f3;
 }
 
 .js{
-    color:#f7df1e;
+    color:#ffeb3b;
+    text-shadow:0 0 20px #ffeb3b;
 }
 
 .react{
     color:#61dafb;
+    text-shadow:0 0 20px #61dafb;
 }
 
 .php{
-    color:#777bb4;
+    color:#a259ff;
+    text-shadow:0 0 20px #a259ff;
 }
 
 .mysql{
-    color:#00758f;
+    color:#00bcd4;
+    text-shadow:0 0 20px #00bcd4;
 }
 
 .node{
-    color:#3c873a;
+    color:#4caf50;
+    text-shadow:0 0 20px #4caf50;
 }
 
 .github{
     color:#ffffff;
+    text-shadow:0 0 20px #ffffff;
 }
 
-.skill-card:hover i{
-    transform:scale(1.2) rotate(5deg);
+/* LIGHT GLOW EFFECT */
+.skill-card::before{
+    content:'';
+    position:absolute;
+    width:150%;
+    height:150%;
+    background:linear-gradient(
+        45deg,
+        transparent,
+        rgba(255,255,255,0.08),
+        transparent
+    );
+    top:-50%;
+    left:-50%;
+    transform:rotate(25deg);
+    transition:0.6s;
 }
+
+.skill-card:hover::before{
+    left:120%;
+}
+
+
+
+
 
 /* PROJECTS */
 .cards{
