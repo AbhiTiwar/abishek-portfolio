@@ -11,20 +11,7 @@ body {
     color: #111;
     line-height: 1.6;
 }
-body.dark {
-    background: #0f172a;
-    color: white;
-}
 
-body.dark .nav {
-    background: #111827;
-}
-
-body.dark .grid div,
-body.dark .card {
-    background: #1f2937;
-    color: white;
-}
 
 
 /* NAV */
