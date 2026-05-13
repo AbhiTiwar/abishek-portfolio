@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abishek Tiwari | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Tiwari | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <header>
-    <nav>
-        <h2>Abishek Tiwari</h2>
-        <ul>
+    <nav class="navbar">
+        <h2>Abhishek</h2>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <button onclick="toggleMenu()">☰</button>
     </nav>
-
-    <div class="hero">
-        <img src="image/profile.jpg" alt="profile">
-        <h1>Hi, I'm Abhishek Tiwari</h1>
-        <p>Beginner Full Stack Web Developer</p>
-
-        <a href="resume.pdf" class="btn">Download Resume</a>
-    </div>
 </header>
 
+<!-- HERO -->
+<section id="home" class="hero">
+    <img src="image/profile.jpg" alt="profile">
+    <h1>Hi, I'm Abhishek Tiwari</h1>
+    <p>Full Stack Web Developer (Beginner)</p>
+
+    <a href="resume.pdf" class="btn">Download CV</a>
+</section>
+
+<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
     <p>
-        I am a passionate beginner web developer who loves building
-        responsive and modern websites using HTML, CSS, JavaScript, and PHP.
+        I am a passionate beginner web developer focused on building
+        responsive and interactive websites using HTML, CSS, JavaScript,
+        PHP, and MySQL. I enjoy learning new technologies and improving
+        my skills every day.
     </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
     <h2>Skills</h2>
-    <div class="box-container">
-        <div class="box">HTML</div>
-        <div class="box">CSS</div>
-        <div class="box">JavaScript</div>
-        <div class="box">React</div>
-        <div class="box">PHP</div>
-        <div class="box">MySQL</div>
+
+    <div class="grid">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>Responsive Design</div>
+        <div>PHP</div>
+        <div>MySQL</div>
     </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Dine-In Restaurant Website</h3>
-        <p>Online food ordering and table reservation system.</p>
+    <div class="card">
+        <h3>Restaurant Website</h3>
+        <p>Online food ordering & table booking system.</p>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Smart Washing Machine (IoT)</h3>
-        <p>Arduino-based smart washing system with sensors.</p>
+        <p>Arduino-based smart automation project.</p>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio using HTML, CSS, JS.</p>
     </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact Me</h2>
+
     <p>Email: tiwari41058@gmail.com</p>
     <p>Phone: +977-9824241058</p>
+
+    <div class="social">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Abishek Tiwari | All Rights Reserved</p>
+    <p>© 2026 Abishek Tiwari</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
