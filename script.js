@@ -58,3 +58,23 @@ function draw() {
 }
 
 draw();
+
+
+// THEME TOGGLE
+function toggleTheme() {
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+    } else {
+        localStorage.setItem("theme", "dark");
+    }
+}
+
+// LOAD SAVED THEME
+window.onload = () => {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light") {
+        document.body.classList.add("light");
+    }
+};
