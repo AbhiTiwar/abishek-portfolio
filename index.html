@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhishek Tiwari | Developer</title>
+<title>Abhishek | Final Boss Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<canvas id="particles"></canvas>
+<div class="cursor"></div>
 
 <!-- NAV -->
-<header class="nav">
+<nav class="nav">
     <h2>Abhishek.dev</h2>
 
     <ul id="menu">
@@ -23,43 +23,35 @@
         <li><a href="#projects">Work</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <button onclick="toggleTheme()" class="theme-btn">🌗</button>
-</header>
+
+    <button onclick="toggleTheme()">⚡</button>
+</nav>
 
 <!-- HERO -->
-<section id="home" class="hero">
-    <div class="hero-left">
-        <h1>Hi, I'm Abhishek 👋</h1>
-
+<section id="home" class="panel hero">
+    <div>
+        <h1>Hi, I'm Abhishek</h1>
         <h2><span id="typing"></span></h2>
+        <p>Building modern, scalable, high-performance web experiences.</p>
 
-        <p>
-            I build high-performance web apps with modern UI/UX,
-            clean architecture, and scalable backend systems.
-        </p>
-
-        <div class="buttons">
+        <div class="btns">
             <a href="resume.pdf">Download CV</a>
-            <a href="#projects" class="ghost">View Projects</a>
+            <a href="#projects" class="ghost">Explore Work</a>
         </div>
-    </div>
-
-    <div class="hero-right">
-        <img src="image/profile.jpg" alt="profile">
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section reveal">
-    <h2>About Me</h2>
+<section id="about" class="panel reveal">
+    <h2>About</h2>
     <p>
-        I’m a full-stack developer focused on building real-world applications,
-        modern UI systems, and performance-driven web experiences.
+        I design and develop web applications focused on performance,
+        usability, and modern UI/UX systems.
     </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section reveal">
+<section id="skills" class="panel reveal">
     <h2>Skills</h2>
 
     <div class="grid">
@@ -73,8 +65,8 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section reveal">
-    <h2>Featured Projects</h2>
+<section id="projects" class="panel reveal">
+    <h2>Projects</h2>
 
     <div class="projects">
 
@@ -84,32 +76,32 @@
         </div>
 
         <div class="card">
-            <h3>IoT Automation</h3>
-            <p>Smart Arduino-based control system.</p>
+            <h3>IoT Smart Device</h3>
+            <p>Arduino automation system.</p>
         </div>
 
         <div class="card">
-            <h3>Portfolio UI</h3>
-            <p>Modern animated developer portfolio.</p>
+            <h3>Portfolio System</h3>
+            <p>Animated responsive UI system.</p>
         </div>
 
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section reveal">
-    <h2>Contact Me</h2>
+<section id="contact" class="panel reveal">
+    <h2>Contact</h2>
 
     <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
+        <input placeholder="Name">
+        <input placeholder="Email">
         <textarea placeholder="Message"></textarea>
         <button>Send</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 Abhishek.dev | Built with passion</p>
+    <p>© 2026 Abhishek | Final Boss Build</p>
 </footer>
 
 <script src="script.js"></script>
