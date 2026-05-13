@@ -199,23 +199,23 @@ input,textarea {
 }
 
 /* GitHub button */
-.github {
+.btn github {
     background: #24292e;
     color: white;
 }
 
-.github:hover {
+.btn github:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 20px rgba(36, 41, 46, 0.6);
 }
 
 /* LinkedIn button */
-.linkedin {
+.btn linkedin {
     background: #0a66c2;
     color: white;
 }
 
-.linkedin:hover {
+.btn linkedin:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 20px rgba(10, 102, 194, 0.6);
 }
