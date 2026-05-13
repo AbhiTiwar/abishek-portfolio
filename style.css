@@ -325,12 +325,12 @@ section h2{
     );
     top:-50%;
     left:-50%;
-    transform:rotate(20deg);
+    transform:rotate(25deg);
     transition:0.6s;
 }
 
 .skill-card:hover::before{
-    left:100%;
+    left:120%;
 }
 .bootstrap:hover{
     color:#a678ff;
