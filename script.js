@@ -1,53 +1,39 @@
-
-// typing effect
-const text = "Full Stack Developer";
+// Typing effect
+const text = ["Full Stack Developer", "CSE Student", "Web Enthusiast"];
 let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
 
 function type() {
-    if (i < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 80);
+    current = text[i];
+
+    if (isDeleting) {
+        j--;
+    } else {
+        j++;
     }
+
+    document.getElementById("typing").textContent =
+        current.substring(0, j);
+
+    if (!isDeleting && j === current.length) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+        return;
+    }
+
+    if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % text.length;
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100);
 }
+
 type();
 
-// theme toggle
+// Theme toggle (simple)
 function toggleTheme() {
     document.body.classList.toggle("light");
-
-    localStorage.setItem(
-        "theme",
-        document.body.classList.contains("light") ? "light" : "dark"
-    );
 }
-
-// load theme
-window.onload = () => {
-    if (localStorage.getItem("theme") === "light") {
-        document.body.classList.add("light");
-    }
-};
-
-// fake form handler (ready for EmailJS upgrade)
-document.getElementById("contactForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    document.getElementById("status").innerText =
-        "Message sent successfully (demo mode)";
-});
-
-window.addEventListener("scroll", () => {
-    const nav = document.querySelector(".nav");
-
-    if (window.scrollY > 50) {
-        nav.style.background = "rgba(0,0,0,0.1)";
-        nav.style.backdropFilter = "blur(15px)";
-    } else {
-        nav.style.background = "white";
-    }
-});
-
-
-
-
-
