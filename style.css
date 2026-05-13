@@ -102,3 +102,22 @@ button {
     border: none;
     cursor: pointer;
 }
+
+body.light {
+    background: #f5f5f5;
+    color: #111;
+}
+
+body.light .nav {
+    background: #ffffff;
+}
+
+body.light .nav a {
+    color: #111;
+}
+
+body.light .grid div,
+body.light .card {
+    background: #e5e7eb;
+    color: #111;
+}
