@@ -139,12 +139,7 @@ nav a.active{
 }
 
 
-.facebook,
-.instagram,
-.linkedin,
-.github{
-    background:rgba(255,255,255,0.08) !important;
-}
+
 
 /* HOVER EFFECT */
 .social:hover{
