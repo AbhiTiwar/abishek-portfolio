@@ -81,7 +81,17 @@ body {
     cursor: pointer;
     color: white;
 }
+@media(max-width:768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .nav nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 /* HERO */
 .hero {
     height:90vh;
