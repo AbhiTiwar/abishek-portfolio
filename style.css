@@ -76,6 +76,15 @@ body {
 .theme:hover {
     transform: scale(1.05);
 }
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero img {
+    animation: float 4s ease-in-out infinite;
+}
 @media(max-width:768px) {
     .nav {
         flex-direction: column;
