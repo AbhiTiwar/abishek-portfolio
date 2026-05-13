@@ -10,108 +10,121 @@
 
 <body>
 
-<!-- NAVBAR -->
+<div class="progress" id="progress"></div>
+
+<!-- NAV -->
 <header class="nav">
-    <h2>Abhishek</h2>
+    <h2 class="logo">Abhishek.dev</h2>
 
     <ul id="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#projects">Work</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <div class="right">
-        <button onclick="toggleTheme()">🌗</button>
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero">
-    <div class="hero-box">
-        <img src="image/profile.jpg" alt="profile">
 
-        <h1>Hi, I'm Abhishek Tiwari</h1>
-
-        <h3><span id="typing"></span></h3>
+    <div class="hero-left">
+        <h1>Hi, I'm Abhishek 👋</h1>
+        <h2><span id="typing"></span></h2>
 
         <p>
-            I build modern, responsive and scalable web applications
-            using HTML, CSS, JavaScript and backend tools.
+            I build high-performance, responsive and modern web applications
+            with clean UI/UX and real-world functionality.
         </p>
 
-        <div class="buttons">
+        <div class="cta">
             <a href="resume.pdf">Download CV</a>
-            <a href="#projects">View Work</a>
+            <a href="#projects" class="outline">View Work</a>
         </div>
     </div>
+
+    <div class="hero-right">
+        <img src="image/profile.jpg" alt="profile">
+    </div>
+
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="reveal">
+<section id="about" class="section reveal">
     <h2>About Me</h2>
     <p>
-        I am a passionate full-stack developer focused on building
-        real-world projects, clean UI, and scalable web applications.
-        I enjoy solving problems and learning new technologies.
+        I am a self-driven full-stack developer focused on building scalable,
+        responsive, and user-centered applications. I love solving problems
+        and turning ideas into real products.
     </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="reveal">
+<section id="skills" class="section reveal">
     <h2>Skills</h2>
 
-    <div class="grid">
+    <div class="skills">
         <div>HTML5</div>
         <div>CSS3</div>
         <div>JavaScript</div>
-        <div>Responsive UI</div>
+        <div>React</div>
         <div>PHP</div>
         <div>MySQL</div>
     </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="reveal">
-    <h2>Projects</h2>
+<section id="projects" class="section reveal">
+    <h2>Featured Work</h2>
 
     <div class="projects">
 
         <div class="card">
             <h3>Restaurant System</h3>
-            <p>Online booking & ordering platform.</p>
+            <p>Full booking & ordering platform.</p>
+            <div class="links">
+                <a href="#">Live</a>
+                <a href="#">Code</a>
+            </div>
         </div>
 
         <div class="card">
-            <h3>IoT Smart Device</h3>
-            <p>Arduino-based automation system.</p>
+            <h3>IoT Automation</h3>
+            <p>Arduino smart control system.</p>
+            <div class="links">
+                <a href="#">Live</a>
+                <a href="#">Code</a>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Responsive animated portfolio design.</p>
+            <h3>Portfolio UI</h3>
+            <p>Modern responsive portfolio system.</p>
+            <div class="links">
+                <a href="#">Live</a>
+                <a href="#">Code</a>
+            </div>
         </div>
 
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="reveal">
-    <h2>Contact</h2>
+<section id="contact" class="section reveal">
+    <h2>Let's Work Together</h2>
 
-    <p>Email: abhishek@example.com</p>
-    <p>Phone: +91 XXXXX XXXXX</p>
-
-    <div class="social">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-    </div>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 <footer>
-    <p>© 2026 Abhishek Tiwari</p>
+    <p>© 2026 Abhishek Tiwari | Built with passion</p>
 </footer>
 
 <script src="script.js"></script>
