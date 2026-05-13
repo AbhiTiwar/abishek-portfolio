@@ -122,13 +122,6 @@ nav a.active{
     z-index:1000;
 }
 
-.github,
-.linkedin,
-.facebook,
-.instagram{
-    background:rgba(255,255,255,0.08);
-}
-
 /* ICON STYLE */
 /* BASE ICON STYLE (NO BACKGROUND BY DEFAULT) */
 .social{
@@ -139,45 +132,51 @@ nav a.active{
     align-items:center;
     border-radius:50%;
     font-size:1.4rem;
+
     color:white;
 
-    /* IMPORTANT: NO BACKGROUND BY DEFAULT */
-    background:transparent;
+    /* SAME FOR ALL BEFORE HOVER */
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
 
-    border:2px solid rgba(255,255,255,0.25);
     transition:0.3s ease;
+}
+
+.social.github,
+.social.linkedin,
+.social.facebook,
+.social.instagram{
+    background:rgba(255,255,255,0.08);
 }
 
 
 
 
 /* HOVER EFFECT */
+
 .social:hover{
-    transform:scale(1.2);
+    transform:scale(1.15);
 }
 
-/* GITHUB */
-.github:hover{
+/* GitHub */
+.social.github:hover{
     background:#333;
-    color:#fff;
 }
 
-/* LINKEDIN */
-.linkedin:hover{
+/* LinkedIn */
+.social.linkedin:hover{
     background:#0077b5;
-    color:#fff;
 }
 
-/* FACEBOOK (ONLY ON HOVER) */
-.facebook:hover{
+/* Facebook */
+.social.facebook:hover{
     background:#1877f2;
-    box-shadow:0 0 15px rgba(24,119,242,0.5);
 }
 
-/* INSTAGRAM (ONLY ON HOVER GRADIENT) */
-.instagram:hover{
+/* Instagram */
+.social.instagram:hover{
     background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-    box-shadow:0 0 15px rgba(225,48,108,0.5);
 }
 @media(max-width:768px){
     .social-bar{
