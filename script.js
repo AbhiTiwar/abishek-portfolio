@@ -1,14 +1,4 @@
 
-// menu
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
-}
-
-// theme toggle
-function toggleTheme() {
-    document.body.classList.toggle("light");
-}
-
 // typing effect
 const text = "Full Stack Developer";
 let i = 0;
@@ -22,7 +12,7 @@ function type() {
 }
 type();
 
-// scroll reveal
+// reveal animation
 window.addEventListener("scroll", () => {
     document.querySelectorAll(".reveal").forEach(el => {
         if (el.getBoundingClientRect().top < window.innerHeight - 100) {
@@ -30,3 +20,11 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+// progress bar
+window.onscroll = () => {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("progress").style.width = scrolled + "%";
+};
