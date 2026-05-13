@@ -258,17 +258,4 @@ input,textarea {
     background: var(--text);
     color: var(--bg);
 }
-.cta a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 18px;
-    background: var(--accent);
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
 
-.cta a:hover {
-    transform: translateY(-3px);
-}
