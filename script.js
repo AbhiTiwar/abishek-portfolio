@@ -1,37 +1,37 @@
 
-// TYPE EFFECT
-const text="Full Stack Developer";
-let i=0;
+// typing effect
+const text = "Full Stack Developer";
+let i = 0;
 
-function type(){
-    if(i<text.length){
-        document.getElementById("typing").innerHTML+=text.charAt(i);
+function type() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
         i++;
-        setTimeout(type,80);
+        setTimeout(type, 80);
     }
 }
 type();
 
-// THEME
-function toggleTheme(){
+// theme toggle
+function toggleTheme() {
     document.body.classList.toggle("light");
+
+    localStorage.setItem(
+        "theme",
+        document.body.classList.contains("light") ? "light" : "dark"
+    );
 }
 
-// CURSOR
-const cursor=document.querySelector(".cursor");
+// load theme
+window.onload = () => {
+    if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light");
+    }
+};
 
-document.addEventListener("mousemove",(e)=>{
-    cursor.style.left=e.clientX+"px";
-    cursor.style.top=e.clientY+"px";
+// fake form handler (ready for EmailJS upgrade)
+document.getElementById("contactForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    document.getElementById("status").innerText =
+        "Message sent successfully (demo mode)";
 });
-
-// REVEAL
-const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-    });
-});
-
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
