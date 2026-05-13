@@ -215,6 +215,68 @@ section h2{
     color:white;
 }
 
+
+/* SKILL CARDS */
+
+.skill-card{
+    background:var(--glass);
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.skill-card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.skill-card i{
+    font-size:4rem;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+/* ICON COLORS */
+
+.html{
+    color:#e34f26;
+}
+
+.css{
+    color:#1572b6;
+}
+
+.js{
+    color:#f7df1e;
+}
+
+.react{
+    color:#61dafb;
+}
+
+.php{
+    color:#777bb4;
+}
+
+.mysql{
+    color:#00758f;
+}
+
+.node{
+    color:#3c873a;
+}
+
+.github{
+    color:#ffffff;
+}
+
+.skill-card:hover i{
+    transform:scale(1.2) rotate(5deg);
+}
+
 /* PROJECTS */
 .cards{
     display:grid;
