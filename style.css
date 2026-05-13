@@ -252,13 +252,13 @@ section h2{
 
 /* HOVER ANIMATION */
 .skill-card:hover i{
-    transform:scale(1.25) rotate(5deg);
+    transform:scale(1.25) rotate(8deg);
 }
 
 /* TEXT */
 .skill-card h3{
-    font-size:1rem;
-    font-weight:500;
+    font-size:1.2rem;
+    font-weight:600;
     margin-top:10px;
 }
 
