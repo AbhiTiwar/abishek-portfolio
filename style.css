@@ -122,6 +122,15 @@ nav a.active{
     z-index:1000;
 }
 
+.github,
+.linkedin,
+.facebook{
+    background:blue;
+}
+.instagram{
+    background:rgba(255,255,255,0.08);
+}
+
 /* ICON STYLE */
 /* BASE ICON STYLE (NO BACKGROUND BY DEFAULT) */
 .social{
