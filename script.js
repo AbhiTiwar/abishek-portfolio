@@ -46,3 +46,24 @@ window.addEventListener("scroll", () => {
         nav.style.background = "white";
     }
 });
+
+
+
+
+
+// smooth reveal with better timing
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+            entry.target.style.transition = "0.8s ease";
+        }
+    });
+});
+
+document.querySelectorAll("section").forEach((sec) => {
+    sec.style.opacity = "0";
+    sec.style.transform = "translateY(50px)";
+    observer.observe(sec);
+});
