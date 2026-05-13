@@ -43,6 +43,6 @@ window.addEventListener("scroll", () => {
         nav.style.background = "rgba(0,0,0,0.1)";
         nav.style.backdropFilter = "blur(15px)";
     } else {
-        nav.style.background = "var(--bg)";
+        nav.style.background = "white";
     }
 });
