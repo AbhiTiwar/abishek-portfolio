@@ -179,3 +179,43 @@ input,textarea {
     border-radius:8px;
     border:none;
 }
+
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* base button */
+.btn {
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+/* GitHub button */
+.github {
+    background: #24292e;
+    color: white;
+}
+
+.github:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(36, 41, 46, 0.6);
+}
+
+/* LinkedIn button */
+.linkedin {
+    background: #0a66c2;
+    color: white;
+}
+
+.linkedin:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(10, 102, 194, 0.6);
+}
