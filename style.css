@@ -28,12 +28,23 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:linear-gradient(-45deg,#0f172a,#111827,#1e293b,#0f172a);
-    background-size:400% 400%;
-    animation:bgAnimation 12s ease infinite;
+    background:var(--bg);
     color:var(--text);
     line-height:1.6;
     transition:0.4s;
+}
+/* DARK MODE BACKGROUND */
+body{
+    background:linear-gradient(-45deg,#0f172a,#111827,#1e293b,#0f172a);
+    background-size:400% 400%;
+    animation:bgAnimation 12s ease infinite;
+}
+
+/* LIGHT MODE BACKGROUND */
+body.light{
+    background:linear-gradient(-45deg,#dbeafe,#f8fafc,#e0f2fe,#f1f5f9);
+    background-size:400% 400%;
+    animation:bgAnimation 12s ease infinite;
 }
 
 @keyframes bgAnimation{
