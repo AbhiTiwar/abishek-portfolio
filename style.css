@@ -1,3 +1,11 @@
+:root {
+    --bg: #0b0f19;
+    --text: #ffffff;
+    --nav: rgba(0,0,0,0.4);
+    --card: rgba(255,255,255,0.05);
+    --accent: #6366f1;
+}
+
 /* =========================
    RESET + BASE
 ========================= */
@@ -17,6 +25,13 @@ body {
     background: #0b0f19;
     color: #ffffff;
     line-height: 1.6;
+}
+body.light {
+    --bg: #f5f7fb;
+    --text: #111111;
+    --nav: rgba(255,255,255,0.8);
+    --card: #ffffff;
+    --accent: #4f46e5;
 }
 
 /* =========================
@@ -73,6 +88,7 @@ body {
     justify-content: space-between;
     padding: 0 10%;
     gap: 40px;
+   margin-top:80px;
 }
 
 /* LEFT SIDE */
