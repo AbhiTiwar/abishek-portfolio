@@ -219,3 +219,56 @@ input,textarea {
     transform: translateY(-3px);
     box-shadow: 0 0 20px rgba(10, 102, 194, 0.6);
 }
+
+.links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+/* Live button */
+.links a:first-child {
+    background: var(--accent);
+    color: white;
+}
+
+.links a:first-child:hover {
+    transform: translateY(-3px);
+}
+
+/* GitHub button */
+.links a:last-child {
+    background: transparent;
+    border: 1px solid var(--text);
+    color: var(--text);
+}
+
+.links a:last-child:hover {
+    background: var(--text);
+    color: var(--bg);
+}
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    transform: translateY(-3px);
+}
