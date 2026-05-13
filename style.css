@@ -94,6 +94,12 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent);
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+    transition: 0.4s;
+}
+
+.profile:hover {
+    transform: scale(1.05);
 }
 .hero {
     height:90vh;
