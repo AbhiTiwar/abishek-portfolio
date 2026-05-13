@@ -25,6 +25,12 @@ body.dark .card {
     background: #1f2937;
     color: white;
 }
+body,
+.card,
+.grid div,
+.nav {
+    transition: 0.3s ease;
+}
 
 /* NAV */
 .nav {
