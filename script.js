@@ -34,14 +34,7 @@ function type() {
 type();
 
 // Theme toggle (simple)
-// Load saved theme
-window.onload = () => {
-    const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "dark") {
-        document.body.classList.add("dark");
-    }
-};
 
 // Toggle theme
 function toggleTheme() {
