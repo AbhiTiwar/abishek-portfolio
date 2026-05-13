@@ -138,6 +138,14 @@ nav a.active{
     border:1px solid rgba(255,255,255,0.15);
 }
 
+
+.facebook,
+.instagram,
+.linkedin,
+.github{
+    background:rgba(255,255,255,0.08) !important;
+}
+
 /* HOVER EFFECT */
 .social:hover{
     transform:scale(1.2);
