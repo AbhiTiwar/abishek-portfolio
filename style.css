@@ -20,14 +20,66 @@ body {
     scroll-behavior:smooth;
 }
 
-/* NAV */
+/* NAVBAR */
 .nav {
-    display:flex;
-    justify-content:space-between;
-    padding:20px 40px;
-    position:sticky;
-    top:0;
-    backdrop-filter:blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* logo */
+.nav .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* menu */
+.nav nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* hover effect */
+.nav nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: var(--accent);
+    transition: 0.3s;
+}
+
+.nav nav a:hover::after {
+    width: 100%;
+}
+
+/* theme button */
+.theme {
+    background: var(--accent);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
 }
 
 /* HERO */
