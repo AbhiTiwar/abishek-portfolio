@@ -252,21 +252,22 @@ section h2{
 
 /* HOVER ANIMATION */
 .skill-card:hover i{
-    transform:scale(1.25) rotate(8deg);
+    transform:scale(1.25) rotate(5deg);
 }
 
 /* TEXT */
 .skill-card h3{
-    font-size:1.2rem;
-    font-weight:600;
+    font-size:1rem;
+    font-weight:500;
     margin-top:10px;
 }
 
 /* ===== COLORFUL ICONS ===== */
 
 .html{
-    color:#ff5722;
-    text-shadow:0 0 20px #ff5722;
+    color:#f7df1e;
+    text-shadow:0 0 12px rgba(247,223,30,0.8);
+    filter:drop-shadow(0 0 6px rgba(0,0,0,0.4));
 }
 
 .css{
