@@ -10,11 +10,11 @@
 
 <body>
 
-<div class="progress" id="progress"></div>
+<canvas id="particles"></canvas>
 
 <!-- NAV -->
 <header class="nav">
-    <h2 class="logo">Abhishek.dev</h2>
+    <h2>Abhishek.dev</h2>
 
     <ul id="menu">
         <li><a href="#home">Home</a></li>
@@ -23,41 +23,37 @@
         <li><a href="#projects">Work</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero">
-
     <div class="hero-left">
         <h1>Hi, I'm Abhishek 👋</h1>
+
         <h2><span id="typing"></span></h2>
 
         <p>
-            I build high-performance, responsive and modern web applications
-            with clean UI/UX and real-world functionality.
+            I build high-performance web apps with modern UI/UX,
+            clean architecture, and scalable backend systems.
         </p>
 
-        <div class="cta">
+        <div class="buttons">
             <a href="resume.pdf">Download CV</a>
-            <a href="#projects" class="outline">View Work</a>
+            <a href="#projects" class="ghost">View Projects</a>
         </div>
     </div>
 
     <div class="hero-right">
         <img src="image/profile.jpg" alt="profile">
     </div>
-
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section reveal">
     <h2>About Me</h2>
     <p>
-        I am a self-driven full-stack developer focused on building scalable,
-        responsive, and user-centered applications. I love solving problems
-        and turning ideas into real products.
+        I’m a full-stack developer focused on building real-world applications,
+        modern UI systems, and performance-driven web experiences.
     </p>
 </section>
 
@@ -65,9 +61,9 @@
 <section id="skills" class="section reveal">
     <h2>Skills</h2>
 
-    <div class="skills">
-        <div>HTML5</div>
-        <div>CSS3</div>
+    <div class="grid">
+        <div>HTML</div>
+        <div>CSS</div>
         <div>JavaScript</div>
         <div>React</div>
         <div>PHP</div>
@@ -77,35 +73,23 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="section reveal">
-    <h2>Featured Work</h2>
+    <h2>Featured Projects</h2>
 
     <div class="projects">
 
         <div class="card">
             <h3>Restaurant System</h3>
-            <p>Full booking & ordering platform.</p>
-            <div class="links">
-                <a href="#">Live</a>
-                <a href="#">Code</a>
-            </div>
+            <p>Full booking + ordering platform.</p>
         </div>
 
         <div class="card">
             <h3>IoT Automation</h3>
-            <p>Arduino smart control system.</p>
-            <div class="links">
-                <a href="#">Live</a>
-                <a href="#">Code</a>
-            </div>
+            <p>Smart Arduino-based control system.</p>
         </div>
 
         <div class="card">
             <h3>Portfolio UI</h3>
-            <p>Modern responsive portfolio system.</p>
-            <div class="links">
-                <a href="#">Live</a>
-                <a href="#">Code</a>
-            </div>
+            <p>Modern animated developer portfolio.</p>
         </div>
 
     </div>
@@ -113,18 +97,18 @@
 
 <!-- CONTACT -->
 <section id="contact" class="section reveal">
-    <h2>Let's Work Together</h2>
+    <h2>Contact Me</h2>
 
     <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 Abhishek Tiwari | Built with passion</p>
+    <p>© 2026 Abhishek.dev | Built with passion</p>
 </footer>
 
 <script src="script.js"></script>
