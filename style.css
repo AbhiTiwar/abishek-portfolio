@@ -184,23 +184,7 @@ section {
 .card:hover {
     transform:translateY(-10px);
 }
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
 
-.card {
-    padding: 20px;
-    border-radius: 15px;
-    background: rgba(255,255,255,0.05);
-    transition: 0.4s;
-}
-
-.card:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
 
 /* FORM */
 input,textarea {
@@ -307,18 +291,4 @@ input,textarea {
 
 
 
-html {
-    scroll-behavior: smooth;
-}
 
-section {
-    scroll-margin-top: 80px;
-}
-
-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px 10%;
-}
