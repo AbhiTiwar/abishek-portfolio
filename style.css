@@ -34,6 +34,19 @@ body {
     background: var(--bg);
     border-bottom: 1px solid rgba(128, 128, 128, 0.15);
 }
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
 
 /* LOGO */
 .nav .logo {
@@ -97,25 +110,26 @@ body {
     }
 }
 /* HERO */
-.profile {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--accent);
-    box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
-    transition: 0.4s;
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
 }
 
-.profile:hover {
-    transform: scale(1.05);
+.hero-left {
+    max-width: 500px;
 }
-.hero {
-    height:90vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero h2 {
+    color: #6366f1;
+    margin-top: 10px;
 }
 
 .cta a {
@@ -169,6 +183,23 @@ section {
 
 .card:hover {
     transform:translateY(-10px);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 /* FORM */
@@ -282,4 +313,12 @@ html {
 
 section {
     scroll-margin-top: 80px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
 }
