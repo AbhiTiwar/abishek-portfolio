@@ -99,12 +99,12 @@ body.light{
 .logo{
     display:flex;
     align-items:center;
-    height:110%;
+    height:120%;
 }
 
 
 .logo img{
-    height: 200px !important;
+    height: 250px !important;
     width: auto !important;
     max-height: none !important;
     object-fit: contain;
