@@ -100,16 +100,13 @@ body.light{
 
 
 .logo img{
-    height: 42px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     transition: 0.3s ease;
 }
 
-.logo img:hover{
-    transform: scale(1.08);
-    filter: drop-shadow(0 0 10px rgba(96,165,250,0.5));
-}
+
 nav a{
     margin:0 15px;
     text-decoration:none;
