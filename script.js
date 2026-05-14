@@ -153,3 +153,32 @@ function toggleTheme(){
         localStorage.setItem("theme","dark");
     }
 }
+
+
+
+// MOBILE MENU
+
+const menuToggle =
+document.getElementById("menu-toggle");
+
+const navbar =
+document.getElementById("navbar");
+
+menuToggle.addEventListener("click",()=>{
+
+    navbar.classList.toggle("active");
+
+});
+
+// CLOSE MENU AFTER CLICK
+
+document.querySelectorAll("nav a")
+.forEach(link => {
+
+    link.addEventListener("click", ()=>{
+
+        navbar.classList.remove("active");
+
+    });
+
+});
