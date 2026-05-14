@@ -75,8 +75,8 @@ document.getElementById("contactForm")
     status.textContent = "Sending...";
 
     emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_hpoxirp",
+        "template_8nucipi",
         this
     )
     .then(() => {
