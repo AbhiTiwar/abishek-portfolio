@@ -74,21 +74,18 @@ body.light{
     top:0;
     left:0;
     width:100%;
-    z-index:1000;
+    height:80px;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 8%;
+    padding:0 40px;
 
+    z-index:1000;
     background:rgba(17, 24, 39, 0.6);
     backdrop-filter:blur(15px);
-    -webkit-backdrop-filter:blur(15px);
-
     border-bottom:1px solid var(--border);
-
-    transition:0.3s ease;
 }
 .light .nav{
     background:rgba(255,255,255,0.6);
@@ -99,8 +96,17 @@ body.light{
 
 
 
+.logo{
+    display:flex;
+    align-items:center;
+    height:80px;
+}
+
 .logo img{
-    max-height: 70px;
+    height:60px;
+    width:auto;
+    object-fit:contain;
+    display:block;
 }
 
 
