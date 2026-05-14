@@ -51,6 +51,9 @@ body{
 
     overflow-x:hidden;
 }
+html{
+    scroll-behavior:smooth;
+}
 
 /* LIGHT MODE BACKGROUND */
 body.light{
@@ -68,16 +71,29 @@ body.light{
 /* NAVBAR */
 .nav{
     position:fixed;
-    width:100%;
     top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:18px 8%;
-    backdrop-filter:blur(12px);
-    background:var(--glass);
-    border-bottom:1px solid rgba(255,255,255,0.1);
-    z-index:1000;
+
+    background:rgba(17, 24, 39, 0.6);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border-bottom:1px solid var(--border);
+
+    transition:0.3s ease;
+}
+.light .nav{
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
 }
 
 .logo{
@@ -102,6 +118,11 @@ nav a.active{
     border-bottom:2px solid var(--accent);
     padding-bottom:5px;
 }
+
+
+
+
+
 
 .theme{
     width:48px;
