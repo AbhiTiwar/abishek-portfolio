@@ -133,25 +133,18 @@ nav a.active{
     align-items:center;
     border-radius:50%;
     font-size:1.4rem;
+
     color:white;
 
-    /* SAME FOR ALL BEFORE HOVER */
-    background:rgba(15, 23, 42, 0.6);
-    border:1px solid rgba(56, 189, 248, 0.2);
-
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
-
     transition:0.3s ease;
+    transform:scale(1);
 }
 
-.social.github,
-.social.linkedin,
-.social.facebook,
-.social.instagram{
-    background:rgba(255,255,255,0.08);
+/* Hover effect (same for all) */
+.social:hover{
+    transform:scale(1.15);
+    filter:brightness(1.1);
 }
-
 
 
 
