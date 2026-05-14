@@ -133,7 +133,7 @@ nav a.active{
     align-items:center;
     border-radius:50%;
     font-size:1.4rem;
-
+     text-decoration:none;
     color:white;
 
     transition:0.3s ease;
