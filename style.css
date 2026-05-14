@@ -374,7 +374,7 @@ section h2{
 
 .css{
     color:#2196f3;
-    text-shadow:0 0 20px #2196f3;
+    text-shadow:0 0 12px rgba(247,223,30,0.8);
 }
 
 .js{
