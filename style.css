@@ -147,32 +147,24 @@ nav a.active{
 }
 
 
-
-/* HOVER EFFECT */
-
-.social:hover{
-    transform:scale(1.15);
+.social.github{
+    background:#24292e;
 }
 
-/* GitHub */
-.social.github:hover{
-    background:#333;
-}
-
-/* LinkedIn */
-.social.linkedin:hover{
+.social.linkedin{
     background:#0077b5;
 }
 
-/* Facebook */
-.social.facebook:hover{
+.social.facebook{
     background:#1877f2;
 }
 
-/* Instagram */
-.social.instagram:hover{
+.social.instagram{
     background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
 }
+
+
+
 @media(max-width:768px){
     .social-bar{
         left:10px;
@@ -184,6 +176,7 @@ nav a.active{
         font-size:1rem;
     }
 }
+
 
 
 
