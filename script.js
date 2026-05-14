@@ -66,6 +66,9 @@ function toggleTheme(){
 
 // CONTACT FORM
 
+
+emailjs.init("c8rGy1XJbALXmFHEX");
+
 document.getElementById("contactForm")
 .addEventListener("submit", function(e){
 
@@ -80,20 +83,12 @@ document.getElementById("contactForm")
         this
     )
     .then(() => {
-
         status.textContent = "Message sent successfully ✅";
         this.reset();
-
-        setTimeout(() => {
-            status.textContent = "";
-        }, 3000);
-
     })
     .catch((error) => {
-
-        status.textContent = "Failed to send message ❌";
-        console.log(error);
-
+        status.textContent = "Failed ❌ Check console";
+        console.log("EmailJS Error:", error);
     });
 
 });
