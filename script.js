@@ -56,11 +56,33 @@ window.onload = typeWriter;
 
 
 // THEME TOGGLE
-
 function toggleTheme(){
 
     document.body.classList.toggle("light");
 
+    const icon = document.querySelector(".theme i");
+
+    if(document.body.classList.contains("light")){
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+        localStorage.setItem("theme","light");
+
+    } else {
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
+        localStorage.setItem("theme","dark");
+    }
+}
+
+const icon = document.querySelector(".theme i");
+
+if(document.body.classList.contains("light")){
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
 }
 
 
