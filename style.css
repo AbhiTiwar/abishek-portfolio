@@ -102,11 +102,13 @@ body.light{
     height:80px;
 }
 
+
 .logo img{
-    height:60px;
-    width:auto;
-    object-fit:contain;
-    display:block;
+    height: 90px !important;
+    width: auto !important;
+    max-height: none !important;
+    object-fit: contain;
+    display: block;
 }
 
 
