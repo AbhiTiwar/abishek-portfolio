@@ -327,7 +327,7 @@ section h2{
 
 .skill-card{
     background:rgba(255,255,255,0.08);
-    padding:35px 20px;
+    padding:30px 20px;
     border-radius:22px;
     text-align:center;
     transition:0.4s ease;
@@ -411,6 +411,9 @@ section h2{
 .github{
     color:#e5e7eb;
     text-shadow:0 0 20px #ffffff;
+}
+.light .github{
+    color:#111827;
 }
 
 /* LIGHT GLOW EFFECT */
