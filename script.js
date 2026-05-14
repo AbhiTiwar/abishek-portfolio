@@ -66,17 +66,39 @@ function toggleTheme(){
 
 // CONTACT FORM
 
-document
-.getElementById("contactForm")
-.addEventListener("submit",function(e){
+document.getElementById("contactForm")
+.addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    document.getElementById("status").innerHTML =
-    "✅ Message Sent Successfully!";
+    const status = document.getElementById("status");
+    status.textContent = "Sending...";
 
-    this.reset();
+    emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        this
+    )
+    .then(() => {
+
+        status.textContent = "Message sent successfully ✅";
+        this.reset();
+
+        setTimeout(() => {
+            status.textContent = "";
+        }, 3000);
+
+    })
+    .catch((error) => {
+
+        status.textContent = "Failed to send message ❌";
+        console.log(error);
+
+    });
+
 });
+
+
 
 
 // SCROLL REVEAL
