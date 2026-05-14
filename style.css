@@ -733,36 +733,136 @@ section h2{
 
 
 /* PROJECTS */
-.cards{
+/* =========================
+   MODERN PROJECT SECTION
+========================= */
+
+.project-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
 }
 
-.card{
-    background:var(--glass);
-    padding:30px;
-    border-radius:20px;
+.project-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+    overflow:hidden;
+
     backdrop-filter:blur(12px);
-    transition:0.4s;
-    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.4s ease;
+
+    position:relative;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+.project-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.35);
 }
 
-.card h3{
+/* IMAGE */
+.project-image{
+    height:220px;
+    overflow:hidden;
+}
+
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:0.5s ease;
+}
+
+.project-card:hover .project-image img{
+    transform:scale(1.08);
+}
+
+/* CONTENT */
+.project-content{
+    padding:25px;
+}
+
+/* TAG */
+.project-tag{
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #6366f1
+    );
+
+    color:white;
+    font-size:0.8rem;
     margin-bottom:15px;
+}
+
+.hardware{
+    background:linear-gradient(
+        135deg,
+        #06b6d4,
+        #14b8a6
+    );
+}
+
+.project-content h3{
+    font-size:1.5rem;
+    margin-bottom:12px;
     color:var(--accent);
 }
 
-.links{
-    margin-top:20px;
+.project-content p{
+    opacity:0.85;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+
+/* TECH STACK */
+.project-tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:22px;
+}
+
+.project-tech span{
+    padding:8px 14px;
+    border-radius:18px;
+
+    background:rgba(255,255,255,0.08);
+
+    font-size:0.8rem;
+}
+
+/* BUTTONS */
+.project-links{
     display:flex;
     gap:15px;
 }
+
+.dark-btn{
+    background:#111827;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .project-image{
+        height:200px;
+    }
+
+}
+
+
+
+
 
 /* CONTACT */
 form{
