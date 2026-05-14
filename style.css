@@ -1027,3 +1027,20 @@ body.light .dark-btn{
 body.light .project-card:hover{
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
+
+
+
+
+
+/* =========================
+   LIGHT MODE GITHUB ICON FIX
+========================= */
+
+body.light .skill-card .github{
+    color: #111827 !important;
+    text-shadow: none;
+}
+
+body.light .skill-card:hover .github{
+    color: #ffffff !important;
+}
