@@ -159,7 +159,7 @@ nav a.active{
     align-items:center;
     border-radius:50%;
     font-size:1.4rem;
-     text-decoration:none;
+    text-decoration:none;
     color:white;
 
     transition:0.3s ease;
@@ -175,6 +175,7 @@ nav a.active{
 
 .social.github{
     background:#24292e;
+    color:#e5e7eb;
 }
 
 .social.linkedin{
