@@ -723,7 +723,7 @@ section h2{
 /* Current badge */
 .badge{
     background:var(--accent);
-    color:#0f172a;
+    color:white;
     padding:4px 10px;
     border-radius:20px;
     font-size:0.75rem;
